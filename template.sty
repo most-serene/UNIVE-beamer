@@ -1,0 +1,36 @@
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\definecolor{CFRed}{RGB}{112, 16, 16}
+
+\setbeamercolor{block title}{bg=CFRed,fg=white}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+% parameter cheat-sheet: https://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+\setbeamertemplate{itemize item}{\color{darkred}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{darkred}$-$}
+\setbeamertemplate{section in toc} {\color{darkred}\inserttocsectionnumber.~\color{black}\inserttocsection}
+\setbeamercolor{subsection in toc}{bg=white,fg=black}
+\setbeamertemplate{subsection in toc}{%
+  \hspace{1.2em}{\color{darkred}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par}
+\setbeamertemplate{enumerate item}[default]
+\setbeamercolor{enumerate item}{fg=darkred}
+\setbeamercolor{caption name}{fg=darkred}
+\setbeamercolor{footnote mark}{fg=darkred}
+
+
+
+\logo{
+\includegraphics[width=1.5cm]{images/logo.png}
+}
